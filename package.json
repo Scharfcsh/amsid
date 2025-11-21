@@ -1,0 +1,44 @@
+{
+  "name": "amsid",
+  "version": "1.0.0",
+  "description": "A secure, URL-safe, configurable unique ID generator.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "nanoid",
+    "secure",
+    "id",
+    "crypto",
+    "uuid",
+    "random",
+    "amsid",
+    "keypair_id",
+    "unique-id",
+    "url-safe"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "typescript": "^5.9.3"
+  }
+}
